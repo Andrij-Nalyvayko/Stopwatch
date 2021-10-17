@@ -1,4 +1,4 @@
-[DEMO Linl](https://andrij-nalyvayko.github.io/Stopwatch/)
+[DEMO Link](https://andrij-nalyvayko.github.io/Stopwatch/)
 
 
 
