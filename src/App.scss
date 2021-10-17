@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+$gray: rgb(218, 240, 227);
+
+@mixin text {
+  font-family: Helvetica, sans-serif, Arial;
+  font-weight: 800;
+}
+
+body {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: 103%;
+  font-size: 52px;
+  font-family: 'Rampart One', Helvetica, sans-serif;
+}
+
+.tittle {
+  font-size: 72px;
+  margin: 50px auto 20px;
+  color: $gray;
+  text-align: center;
+}
+
+.stop-watch {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  background-color: $gray;
+  margin: 0 auto;
+  border: 3px solid rgb(177, 212, 177);
+  border-radius: 30px;
+  width: 550px;
+  height: 300px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__definitions {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 78px;
+
+    margin-top: 25px;
+  }
+
+  &__definition {
+    font-family: Helvetica, sans-serif, Arial;
+  }
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Rampart One';
+    
+    width: 140px;
+    height: 100px;
+    border-radius: 10px;
+
+    background-color: rgb(253, 253, 253);
+    border: 2px solid;
+  }
+
+  &__data {
+    @include text;
+  }
+  
+  &__separator {
+    @include text;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__button {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+
+    margin: 5px;
+    height: 50px;
+    width: 130px;
+  }
+
+  &__start {
+    background-color: green;
+
+    &:hover {
+    background-color: rgb(11, 109, 11);
+    box-shadow: 3px 3px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+  }
+
+  &__stop {
+    background-color: rgb(230, 44, 44);
+
+    &:hover {
+      background-color: rgb(212, 25, 25);
+      box-shadow: 3px 3px 8px 0px rgba(34, 60, 80, 0.2);
+      }
+  }
+
+  &__wait {
+    background-color: rgb(201, 214, 16);
+
+    &:hover {
+      background-color: rgb(168, 179, 15);
+      box-shadow: 3px 3px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+  }
+  &__reset {
+    background-color: rgb(21, 119, 247);
+
+    &:hover {
+      background-color: rgb(18, 95, 196);
+      box-shadow: 3px 3px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+  }
+}
+
+
+
